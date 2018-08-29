@@ -4,8 +4,7 @@ Auteur: VERGNE Anthony
 Maitre de stage: GUITTENY Fabrice  
 Tuteur: BLIN Guillaume
 
-18 Juin - 31 Août 2018  
-_Strictement confidentiel_
+18 Juin - 31 Août 2018
 
 - [Rapport de stage](#rapport-de-stage)
   - [I- Présentation](#i--pr%C3%A9sentation)
