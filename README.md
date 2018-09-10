@@ -12,18 +12,36 @@ Tuteur: BLIN Guillaume
     - [2. L'environement](#2-lenvironement)
     - [3. L'équipe](#3-l%C3%A9quipe)
     - [4. Le sujet](#4-le-sujet)
-  - [II- Dashboard](#ii--dashboard)
-    - [1- Plan - Expression de besoin Initial](#1--plan---expression-de-besoin-initial)
-    - [2- Do - Expression de besoin Initial](#2--do---expression-de-besoin-initial)
-    - [2- Check Résultat](#2--check-r%C3%A9sultat)
-      - [A-Coté client](#a-cot%C3%A9-client)
-      - [B-Coté serveur](#b-cot%C3%A9-serveur)
+  - [II- Déroulement du stage](#ii--d%C3%A9roulement-du-stage)
+    - [Plan - Expression de besoin initiale](#plan---expression-de-besoin-initiale)
+    - [Do - Autoformation](#do---autoformation)
+    - [Check - Premier graph](#check---premier-graph)
+    - [Act -](#act)
+    - [Plan - analyse des points d'amélioration](#plan---analyse-des-points-dam%C3%A9lioration)
+    - [Do - Graphique Lead Time](#do---graphique-lead-time)
+    - [Check -](#check)
+    - [Act - Modifications et corrections](#act---modifications-et-corrections)
+    - [Plan - Inclure le graph dans l'application](#plan---inclure-le-graph-dans-lapplication)
+    - [Do -](#do)
+    - [Check](#check)
+    - [Act -](#act)
+    - [Plan - Compteur Bugzilla](#plan---compteur-bugzilla)
+    - [Do - Réalisation](#do---r%C3%A9alisation)
+    - [Check -](#check)
+    - [Act - Modifications et corrections](#act---modifications-et-corrections)
+    - [Plan - Installation de l'application](#plan---installation-de-lapplication)
+    - [Do - Réalisation](#do---r%C3%A9alisation)
+    - [Check](#check)
+    - [Act - Modifications et corrections](#act---modifications-et-corrections)
+    - [Plan - Présentation](#plan---pr%C3%A9sentation)
+    - [Do -](#do)
+    - [Check -](#check)
+    - [Act -](#act)
     - [3- Améliorations possibles](#3--am%C3%A9liorations-possibles)
     - [4- Technologies utilisées](#4--technologies-utilis%C3%A9es)
-  - [III - Déroulement et activités](#iii---d%C3%A9roulement-et-activit%C3%A9s)
-  - [IV- Difficultés](#iv--difficult%C3%A9s)
-  - [V- Ce que j’ai appris](#v--ce-que-jai-appris)
-  - [VI- Remerciements](#vi--remerciements)
+  - [III- Difficultés](#iii--difficult%C3%A9s)
+  - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
+  - [V- Remerciements](#v--remerciements)
 
 ## I- Présentation
 
@@ -100,32 +118,78 @@ Ces outils leur feront gagner un temps précieux et leur permettront de se conce
 Pour moi ce stage est l'occasion d'acquérir des compétences en développement web, plus particulièrement en Javascript, mais aussi de découvrir ou d'approfondir certains concepts plus généraux de l'informatique.  
 Ce stage étant mon premier dans ce domaine, il me permet également de découvrir la vie et le travail en entreprise au sein d'une équipe de développeurs expérimentés.
 
-## II- Dashboard
+## II- Déroulement du stage
 
-### 1- Plan - Expression de besoin Initial
+<!-- - Auto-formation sur les technologies prévues d'être utilisées: JavaScript, Node.js, D3.js, React.js, SVG, Git (? semaines)
+- Création d'un Graph à l'aide de Node et de D3 avec des données statiques.
+- Prise en main du Radiator (plateforme next.js existante dans l'entreprise):
+  - Création d'un page home qui expose les écrans de monitoring de chaque équipes
+  - Gestion api
+- Création de l'écran de monitoring de la "team Burton":
+  - Portage et mise en fonction (data) du graph
+    - Découpage du graph en composants react
+    - Création api Bugzilla
+    - Création server custom (handle api)
+  - Améliorations :
+    - bugDetail
+    - Ajout légende
+    - Refresh data
+    - Flexibilité + paramétrabilité drawGraph -> ajout props
+    - Animation
+  - Deuxieme partie :
+    - Compteur
+    - Historique (cron)
+    - Deuxieme graph
+    - Navigation clavier
+- Installation (+ bat et service)
+- Démonstration en amphi -->
 
-analyse points d'amélioration  
-mail  
+**Activités parallèles**
+
+- Readme
+- Démos, AIC, débriefs en // -->
+
+En arrivant dans l'entreprise, mon maître de stage m'a fait visité le batiment R&D Soft et expliqué le fonctionnement général de l'entreprise. Nous avons ensuite visité les autres batiments présents sur le site et réglé les dernier détails administratifs.
+
+Aillant intégré une équipe dont le travail est basé sur l'amélioration continue, ce stage se déroule en suivant ce même principe:
+
+![shéma amélioration continue](améliorationContinue.jpg)
+
+### Plan - Expression de besoin initiale
+
+L'objectif étant de réaliser une application web, le stage démarre par l'apprentissage de certaines technologies que j'utiliserai par la suite ([voir technologies utilisées](#4--technologies-utilis%C3%A9es))
+
+### Do - Autoformation
+
+[tic tac toe]
+
+La seconde étape a été d'être capable de dessiner un graphique très simple à l'aide des technologies apprises lors de ma formation
+
+### Check - Premier graph
+
+![Premier graphique simple](tuto.PNG)
+
+### Act -
+
+### Plan - analyse des points d'amélioration
+
+Réunion avec une partie de l'équipe concernant l'expression de besoin.
+
+Graphique Lead Time
 graphs excel valid  
 couleurs plus contrastées + branding  
 compteur bugs + graph historique  
 croquis graph
 
-### 2- Do - Expression de besoin Initial
-
-### 2- Check Résultat
-
-#### A-Coté client
-
-La première étape a été d'être capable de dessiner un graphique très simple à l'aide des technologies apprises lors de ma formation:
-
-![Premier graphique simple](tuto.PNG)
+### Do - Graphique Lead Time
 
 Il a ensuite été question de réaliser une ébauche d'un des graphiques présent sur **Excel** et que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
 
+### Check -
+
 ![Screen du premier jet du graphique demandé (hors Radiator)](premierJet.PNG)
 
-<!-- refaire découpe screen -->
+### Act - Modifications et corrections
 
 Après présentation du premier jet à l'équipe et prise en compte des retours, j'ai pu apporter quelques améliorations et relier le graphique à la base de donnée.
 
@@ -146,6 +210,32 @@ L'image suivante montre le résultat final du premier graphique présent sur le 
   - L'ajout d'une légende a également été effectué par rapport à la première version du graphique. En plus de donner des informations concernant l'affichage du graphique, cette légende apporte une interraction avec l'utilisateur. En effet cocher ou décocher un element de la légende permet de l'afficher ou de le masquer du rendu à l'écran comme ci-dessous:
 
     ![Exemple d'interraction légende](cacherElement.PNG)
+
+### Plan - Inclure le graph dans l'application
+
+### Do -
+
+api + page commune
+
+### Check
+
+La réalisation de ces graphiques a également nécessité la modification du fonctionnement du serveur:
+
+![Fonctionnement ancien serveur](oldServer.svg)
+
+    Avant modification du serveur, le navigateur l'interrogait avec une URL et la page correspondante était chargée.
+
+![Fonctionnement nouveau serveur](newServer.svg)
+
+    Après modification du serveur, si le navigateur demande une page comme celles qui existaient précédemment, le fonctionnement reste le même.
+
+    Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.
+
+### Act -
+
+### Plan - Compteur Bugzilla
+
+### Do - Réalisation
 
 Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis à jour par l'équipe tous les matins lors de l'AIC.
 
@@ -173,20 +263,6 @@ Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs,
     - Description Affichage
     - Survol titre compteur
 
-#### B-Coté serveur
-
-La réalisation de ces graphiques a également nécessité la modification du fonctionnement du serveur:
-
-![Fonctionnement ancien serveur](oldServer.svg)
-
-    Avant modification du serveur, le navigateur l'interrogait avec une URL et la page correspondante était chargée.
-
-![Fonctionnement nouveau serveur](newServer.svg)
-
-    Après modification du serveur, si le navigateur demande une page comme celles qui existaient précédemment, le fonctionnement reste le même.
-
-    Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.
-
 ![Fonctionnement du serveur pour le premier graph](serverLTGraph.svg)
 
     Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
@@ -196,6 +272,29 @@ La réalisation de ces graphiques a également nécessité la modification du fo
     Le nouveau serveur offre aussi la possibilité d'ajouter des taches automatisées à un Cron.
     La tache qu'exécute le cron actuellement est d'interroger la base de donnée tous les jours à une heure fixe et d'enregistrer le résultat reçu dans un fichier localement. Ce fichier est ensuite utilisé par le server afin de dessiner les graphiques retraçant l'historique des compteurs.
 
+### Check -
+
+### Act - Modifications et corrections
+
+### Plan - Installation de l'application
+
+- Lancement automatique
+- navigation clavier
+
+### Do - Réalisation
+
+### Check
+
+### Act - Modifications et corrections
+
+### Plan - Présentation
+
+### Do -
+
+### Check -
+
+### Act -
+
 - .env
 - cache
 - Decoupage data / rendu
@@ -204,15 +303,15 @@ La réalisation de ces graphiques a également nécessité la modification du fo
 
 Nouveaux composants :
 
-- Creer d'autres graphs concernant le support et la maintenance de Modaris (nombre d'appels, volumétrie des taches, évolution des bugs découpée pour chaque [todo: feature ?])
-- Ajout de composants de suivi de logs **Jenkins** présents sur l'ancienne application de monitoring.
+- Creer d'autres graphs concernant le support et la maintenance de Modaris (nombre d'appels au call-center, volumétrie des taches, évolution des bugs découpée pour chaque produit), ect.
+- Ajout d'un composants **Jenkins** pour suivre les logs, ce composant était présent sur l'ancienne application de monitoring.
 
 Améliorations :
 
 - Avoir une réglette pour selectionner la période d'affichage des graph compteurs (déjà parametrable dans le fichier .env).
-- La fonction dateDiffInDays (formatLTGraphData.js) devrait calculé les jours ouvrés entre deux dates mais elle ne prend pas encore en compte les jour fériés.
+- La fonction dateDiffInDays (formatLTGraphData.js) devrait calculer les jours ouvrés entre deux dates mais elle ne prend pas encore en compte les jour fériés.
 - Séparer complétement les API et le rendu.
-- Inverser la couleur des points du carousel
+- Inverser la couleur des points du carousel pour un rendu plus intuitif.
 
 ### 4- Technologies utilisées
 
@@ -239,9 +338,9 @@ L'application de monitoring déjà en place dans l'entreprise est construite à 
   Il permet aussi d'effectuer un routage côté client qui se présente comme les applications universelles natives.  
    **Next.js** est développé par ZEIT et bâti sur **React**, **Webpack** et **Babel**
 
-Les graphiques réalisés rendent comptes de données du logiciel **Bugzilla** présentes sur un serveur **MySQL**. Elles sont extraite à l'aide d'une **API** créée pour l'occasion et passées à notre composant à travers un **HOC**
+Les graphiques réalisés rendent comptes de données du logiciel **Bugzilla** présentes sur un serveur **MySQL**. Elles sont extraite à l'aide d'une **API** créée pour l'occasion et passées à notre composant à travers un **HOC**.  
 Ces graphiques utilisent le format de dessin **SVG** qui, de part sa nature vectorielle, offre la possibilité de zoomer ou de dézoomer à l'infini sans jamais déformer l'image. L'utilisation de ce format est rendu possible dans notre application par l'utilisation de la bibliothèque graphique **D3.js**.  
-Le deuxieme graph nécessite également le stockage de l'historique de la liste des bugs. Cette historique est stocké sous forme de fichiers **JSON** afin d'être réutilisable facilement dans le code **Javascript**
+Le deuxieme graph nécessite également le stockage de l'historique de la liste des bugs. Cet historique est stocké sous forme de fichiers **JSON** afin d'être réutilisable facilement dans le code **Javascript**
 
 - **Bugzilla** est un logiciel libre de système de suivi de problèmes avec interface web.  
   Développé et utilisé par l'organisation _Mozilla_, ce logiciel gère le suivi de bugs (ou de « demandes d'améliorations ») provenant de sites, logiciels et courriels sous la forme de « tickets ».  
@@ -250,11 +349,11 @@ Le deuxieme graph nécessite également le stockage de l'historique de la liste 
 - **MySQL** est un serveur de bases de données relationnelles **SQL** développé dans un souci de performances élevées en lecture, ce qui signifie qu'il est davantage orienté vers le service de données déjà en place que vers celui de mises à jour fréquentes et fortement sécurisées. Il est multi-thread et multi-utilisateur.  
   C'est un logiciel libre et open source, développé sous double licence selon qu'il est distribué avec un produit libre ou avec un produit propriétaire.
 
-- **API**
+- Une **API** (ou interface de programmation applicative ) est un ensemble normalisé de classes, de méthodes ou de fonctions qui sert de façade par laquelle un logiciel offre des services à d'autres logiciels.
 
-- **HOC**
+- Un **HOC (=Higher Order Component)** est une fonction qui prend en paramètre une définition de composant (classe ou fonction), et renvoie une nouvelle définition de composant, qui ajoute du comportement à la première. Il s’agit en fait du pattern Décorateur (ou Higher Order Function) appliqué aux composants React.
 
-- **SVG (Scalable Vector Graphics)** est un format de données conçu pour décrire des ensembles de graphiques vectoriels et basé sur **XML**. Ce format, spécifié par le _World Wide Web Consortium_, est inspiré directement du **VML** et du **PGML**
+- **SVG (=Scalable Vector Graphics)** est un format de données conçu pour décrire des ensembles de graphiques vectoriels et basé sur **XML**. Ce format, spécifié par le _World Wide Web Consortium_, est inspiré directement du **VML** et du **PGML**
 
 - **D3.js** permet l'affichage de données numériques sous une forme graphique et dynamique.  
   Il s'agit d'un outil important pour la conformation aux normes **W3C** qui utilise les technologies courantes **SVG**, **JavaScript** et **CSS** pour la visualisation de données. **D3** est le successeur officiel du précédent framework **Protovis**. Contrairement aux autres bibliothèques, celle-ci permet un plus ample contrôle du résultat visuel final.
@@ -269,67 +368,30 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 - **Git** est un logiciel de gestion de version décentralisé.  
   Ce logiciel libre créé par _Linus Torvalds_, auteur du noyau **Linux**, et distribué selon les termes de la licence publique générale _GNU version 2_, est le logiciel de gestion de versions le plus populaire, utilisé par plus de douze millions de personnes.
 
-## III - Déroulement et activités
+## III- Difficultés
 
-[ . . . ]
-
-- Visite entreprise (taille, services, cantine, ce, administration)
-- Réunion avec une partie de l'équipe concernant l'expression de besoin
-- Auto-formation sur les technologies prévues d'être utilisées: JavaScript, Node.js, D3.js, React.js, SVG, Git (? semaines)
-- Création d'un Graph à l'aide de Node et de D3 avec des données statiques.
-- Prise en main du Radiator (plateforme next.js existante dans l'entreprise):
-  - Création d'un page home qui expose les écrans de monitoring de chaque équipes
-  - Gestion api
-- Création de l'écran de monitoring de la "team Burton":
-  - Portage et mise en fonction (data) du graph
-    - Découpage du graph en composants react
-    - Création api Bugzilla
-    - Création server custom (handle api)
-  - Améliorations :
-    - bugDetail
-    - Ajout légende
-    - Refresh data
-    - Flexibilité + paramétrabilité drawGraph -> ajout props
-    - Animation
-  - Deuxieme partie :
-    - Compteur
-    - Historique (cron)
-    - Deuxieme graph
-    - Navigation clavier
-- Installation (+ bat et service)
-- Démonstration en amphi
-
-**Activités parallèles**
-
-- Readme
-- Démos, AIC, débriefs en //
-
-## IV- Difficultés
-
-- Apprentissage d'un nouveau langage et de nouvelles méthodes
-- Cibler les attentes de l'utilisateur
-- Sélection colonne -> Structure html (graph construit par état au départ puis par colonne) + changer toute la colonne dans une même couleur n'était pas pertinent -> lighten & rotate
-- Structure repo (découpage composants, api, services, pages, etc.)
-- Backend (server, api, bd)
-- Refresh / animation
-- Accessibilité et réutilisabilité autres équipes
+- Apprentissage d'un nouveau langage et de nouvelles méthodes.
+- Cibler les attentes de l'utilisateur.
+- Structure du code HTML: le graphique était d'abord construit par état mais le construire par colonne permet de selectionner l'intégralité de la colonne plus facilement.
+- Changer toute la colone dans une même couleur n'était pas pertinent, passer au format de couleur HCL permet de modifier légérement la luminosité et de "tourner" la couleur de la colonne pour une animation plus discrete et naturelle.  
+  ![prisme couleur HCL](hcl.jpg)
+- Structure du projet (découpage en composants, api, services et pages).
+- Le développement Back-end (server, API, base de donnée).
+- Accessibilité et réutilisabilité des composants pour les autres équipes
 - Formatage des dates
-- Lancement automatique
-- Navigation clavier (class auto)
 - Chiffrage / gestion du temps
 
-## V- Ce que j’ai appris
+## IV- Ce que j’ai appris
 
-- Compétences dev (js, node.js, react.js,d3.js, git, svg, .json, markdown)
+- Compétences de développement (langage JavaScript, node.js, react.js, d3.js, git, svg, .json, markdown)
 - Monde de l’entreprise (agilité)
-- Culture Informatique (web-assembly, scaling dynamique (cloud), intégration continue)
-- Séparation data/rendu
-- Architecture microservices
+- Culture Informatique (web-assembly, scaling dynamique (cloud), intégration continue).
+- Séparation collecte de data/formatage/rendu^.
+- Animation.
+- Architecture microservices (permet un scaling horizontal et de déployer, ajuster, puis redéployer indépendamment les différents services sans compromettre l'intégrité d'une application).
 
-<!-- The microservices Architecture today is widespread and predicated by large companies such as Uber, Google, Airbnb, Square
+## V- Remerciements
 
-The diagram above explains the difference between a monolithic architecture and a very, very simple microservice architecture. With a monolithic architecture, you have one large server responsible for handling all the requests. This is going to hit you at scale. It’s going to hit you hard. Microservices, however, can balance traffic due to your business’ needs. If you are receiving a large number of payments, you can scale up your payment service and keep the other services using a smaller number of resources. It’s horizontal scaling at it’s finest. -->
-
-## VI- Remerciements
+Je tiens à remercier l'_université de Bordeaux_ ainsi que l'entreprise _Lectra_ pour m'avoir permit de réaliser ce stage, Magalie Soubré Emporio pour m'avoir aidé a le trouver, les équipes ArtCAD et Team Burton pour avoir été trés acceuillantes, Mr Guillaume Blin et Fabrice Guitteny pour avoir encadré ce stage ainsi que Guillaume Sévaux pour m'avoir accompagné tout au long de celui-ci et pour m'avoir appris énormément de choses.
 
 ![logo université](université.png) ![logo Lectra](Lectra.jpg)
