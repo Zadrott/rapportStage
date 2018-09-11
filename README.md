@@ -12,33 +12,10 @@ Tuteur: BLIN Guillaume
     - [2. L'environement](#2-lenvironement)
     - [3. L'équipe](#3-l%C3%A9quipe)
     - [4. Le sujet](#4-le-sujet)
-  - [II- Déroulement du stage](#ii--d%C3%A9roulement-du-stage)
-    - [Plan - Expression de besoin initiale](#plan---expression-de-besoin-initiale)
-    - [Do - Autoformation](#do---autoformation)
-    - [Check - Premier graph](#check---premier-graph)
-    - [Act -](#act)
-    - [Plan - analyse des points d'amélioration](#plan---analyse-des-points-dam%C3%A9lioration)
-    - [Do - Graphique Lead Time](#do---graphique-lead-time)
-    - [Check -](#check)
-    - [Act - Modifications et corrections](#act---modifications-et-corrections)
-    - [Plan - Inclure le graph dans l'application](#plan---inclure-le-graph-dans-lapplication)
-    - [Do -](#do)
-    - [Check](#check)
-    - [Act -](#act)
-    - [Plan - Compteur Bugzilla](#plan---compteur-bugzilla)
-    - [Do - Réalisation](#do---r%C3%A9alisation)
-    - [Check -](#check)
-    - [Act - Modifications et corrections](#act---modifications-et-corrections)
-    - [Plan - Installation de l'application](#plan---installation-de-lapplication)
-    - [Do - Réalisation](#do---r%C3%A9alisation)
-    - [Check](#check)
-    - [Act - Modifications et corrections](#act---modifications-et-corrections)
-    - [Plan - Présentation](#plan---pr%C3%A9sentation)
-    - [Do -](#do)
-    - [Check -](#check)
-    - [Act -](#act)
-    - [3- Améliorations possibles](#3--am%C3%A9liorations-possibles)
-    - [4- Technologies utilisées](#4--technologies-utilis%C3%A9es)
+  - [II- Réalisation de l'application](#ii--r%C3%A9alisation-de-lapplication)
+    - [1- Développement](#1--d%C3%A9veloppement)
+    - [2- Améliorations possibles](#2--am%C3%A9liorations-possibles)
+    - [3- Technologies utilisées](#3--technologies-utilis%C3%A9es)
   - [III- Difficultés](#iii--difficult%C3%A9s)
   - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
   - [V- Remerciements](#v--remerciements)
@@ -118,9 +95,11 @@ Ces outils leur feront gagner un temps précieux et leur permettront de se conce
 Pour moi ce stage est l'occasion d'acquérir des compétences en développement web, plus particulièrement en Javascript, mais aussi de découvrir ou d'approfondir certains concepts plus généraux de l'informatique.  
 Ce stage étant mon premier dans ce domaine, il me permet également de découvrir la vie et le travail en entreprise au sein d'une équipe de développeurs expérimentés.
 
-## II- Déroulement du stage
+## II- Réalisation de l'application
 
-<!-- - Auto-formation sur les technologies prévues d'être utilisées: JavaScript, Node.js, D3.js, React.js, SVG, Git (? semaines)
+### 1- Développement
+
+<!--
 - Création d'un Graph à l'aide de Node et de D3 avec des données statiques.
 - Prise en main du Radiator (plateforme next.js existante dans l'entreprise):
   - Création d'un page home qui expose les écrans de monitoring de chaque équipes
@@ -142,7 +121,7 @@ Ce stage étant mon premier dans ce domaine, il me permet également de découvr
     - Deuxieme graph
     - Navigation clavier
 - Installation (+ bat et service)
-- Démonstration en amphi -->
+- Démonstration en amphi
 
 **Activités parallèles**
 
@@ -155,43 +134,41 @@ Aillant intégré une équipe dont le travail est basé sur l'amélioration cont
 
 ![shéma amélioration continue](améliorationContinue.jpg)
 
-### Plan - Expression de besoin initiale
+**Plan - Expression de besoin initiale**
 
-L'objectif étant de réaliser une application web, le stage démarre par l'apprentissage de certaines technologies que j'utiliserai par la suite ([voir technologies utilisées](#4--technologies-utilis%C3%A9es))
+L'objectif étant de réaliser une application web, le stage démarre par l'apprentissage de certaines technologies que j'utiliserai par la suite ([voir II.3 - technologies utilisées](#3--technologies-utilis%C3%A9es))
 
-### Do - Autoformation
+**Do - Autoformation**
 
-[tic tac toe]
+La première étape a été d'être capable de dessiner un graphique très simple à l'aide des technologies apprises lors de ma formation
 
-La seconde étape a été d'être capable de dessiner un graphique très simple à l'aide des technologies apprises lors de ma formation
-
-### Check - Premier graph
+**Check - Premier graph**
 
 ![Premier graphique simple](tuto.PNG)
+On a obtenu un graphique en barres avec des valeurs arbitraires.
 
-### Act -
+**Act**
 
-### Plan - analyse des points d'amélioration
+Ce graphique n'est pas exploitable en l'état mais pourra servir de base pour la suite.
 
-Réunion avec une partie de l'équipe concernant l'expression de besoin.
+**Plan - Analyse des points d'amélioration**
 
-Graphique Lead Time
-graphs excel valid  
-couleurs plus contrastées + branding  
-compteur bugs + graph historique  
-croquis graph
+Nous avons ensuite organisé une réunion avec une partie de l'équipe pour traiter l'expression de besoin concernant le dashboard. L'équipe voulait automatiser et améliorer des graphiques qui étaient fait sur _Excel_.
+La modification des couleurs afin d'augmenter le contraste et d'incorporer le branding _Lectra_ était aussi un point d'amélioration évoqué.
 
-### Do - Graphique Lead Time
+**Do - Graphique Lead Time**
 
-Il a ensuite été question de réaliser une ébauche d'un des graphiques présent sur **Excel** et que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
+Il donc été question de réaliser une ébauche d'es graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
 
-### Check -
+**Check -**
 
 ![Screen du premier jet du graphique demandé (hors Radiator)](premierJet.PNG)
 
-### Act - Modifications et corrections
+Cette première ébauche, bien que basée sur des données statiques est proche du résultat attendu.
 
-Après présentation du premier jet à l'équipe et prise en compte des retours, j'ai pu apporter quelques améliorations et relier le graphique à la base de donnée.
+**Act - Modifications et corrections**
+
+Après présentation de mon travail à l'équipe et prise en compte des retours, j'ai pu apporter quelques améliorations et relier le graphique à la base de donnée.
 
 L'image suivante montre le résultat final du premier graphique présent sur le Dashboard:
 
@@ -201,7 +178,7 @@ L'image suivante montre le résultat final du premier graphique présent sur le 
   Ce temps est divisé en 3 étapes: d'abord la prise en charge puis la correction et enfin la validation qui correspondent à des status présents sur _Bugzilla_.
 
 - Cela a necessité la création d'une **API** pour récupérer les données sur le serveur Bugzilla.  
-  Le nombre de jours ouvrés est ensuite calculé à partir de la date de modification des status puis ces données sont formatées et passées au composant Graphique via notre **HOC** (voir [II.4](#4--technologies-utilis%C3%A9es)).
+  Le nombre de jours ouvrés est ensuite calculé à partir de la date de modification des status puis ces données sont formatées et passées au composant Graphique via notre **HOC** (voir [II.3](#3--technologies-utilis%C3%A9es)).
 
 - Certaines fonctionnalités ont également été ajouté par rapport au graphique disponible sur _Excel_:
 
@@ -211,15 +188,15 @@ L'image suivante montre le résultat final du premier graphique présent sur le 
 
     ![Exemple d'interraction légende](cacherElement.PNG)
 
-### Plan - Inclure le graph dans l'application
+**Plan - Inclure le graph dans l'application**
 
-### Do -
+Une application de monitoring Next.js été déjà existante dans l'entreprise et utilisée par certaines équipes. Le prochain objectif a donc été d'inclure notre composant dans cette application.
 
-api + page commune
+**Do**
 
-### Check
+Pour ce faire il a d'abord fallu transformer notre graphique en composant React et implémenter une API Bugzilla afin que le server puisse gerer nos requêtes.
 
-La réalisation de ces graphiques a également nécessité la modification du fonctionnement du serveur:
+**Check**
 
 ![Fonctionnement ancien serveur](oldServer.svg)
 
@@ -229,77 +206,96 @@ La réalisation de ces graphiques a également nécessité la modification du fo
 
     Après modification du serveur, si le navigateur demande une page comme celles qui existaient précédemment, le fonctionnement reste le même.
 
-    Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.
+Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.  
+Un système de cache a également été mis en place afin d'améliorer les performances en cas de nombreux composants impliquants de nombreuses requêtes similaires.
 
-### Act -
+![Fonctionnement du serveur pour le premier graph](serverLTgraph.svg)
 
-### Plan - Compteur Bugzilla
+    Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
 
-### Do - Réalisation
+**Act**
+
+Une fois le graph fonctionnel, j'ai pu de nouveau collecter les retours de l'équipe et proceder aux modifications nécessaires puis passer au deuxième composant.
+
+**Plan - Compteur Bugzilla**
 
 Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis à jour par l'équipe tous les matins lors de l'AIC.
+
+**Do - Réalisation**
 
 ![ancien compteur](oldCounter.jpg)
 
     Ici nous pouvons voir le compteur qui était mis à jour à la main en se connectant sur Bugzilla et en reportant le nombre de bugs.
 
+Après avoir récupéré les données via notre API et une nouvelle requête SQL, nous pouvons afficher un compteur basique sur notre page.
+
+**Check -**
+
 ![Nouveau compteur](newCounter.PNG)
 
-    Après avoir récupéré les données via notre API et une nouvelle requête SQL, nous pouvons afficher un compteur sur notre page.
+Ce nouveau compteur est simplement un composant React qui affiche les données recueillies en face de chaque état.
 
-A partir de ces compteur, l'équipe a demandé à pouvoir visualiser la tendance de l'évolution de ces compteurs en tenant un historique:
+**Act**
+
+A partir de ces compteur, l'équipe a demandé à pouvoir visualiser la tendance de l'évolution de ces compteurs en tenant un historique.
+
+**Plan**
 
 ![croquis Fabrice](croquisHistorique.jpg)
 
-    Après avoir discuter avec certains membres de l'équipe, nous avons choisi de visualiser cet historique sous forme de graphique.
+Après avoir discuté avec certains membres de l'équipe, nous avons choisi de visualiser cet historique sous forme de graphique.
 
-[Graph filled lines]
+**Do**
+
+Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs, j'ai d'abord essayé de dessiner un graphique avec des lignes mais j'ai finalement opté pour des barres sans espaces entre elles afin de conservé l'affichage du nombre sur le rectangle. Ces expérimentations ont tout de même permis d'améliorer le composant afin de pouvoir dessiner plusieurs types de graphiques (ligne en pointillé, ligne normale, ligne qui rempli l'aire en dessous, barres avec plus ou moins d'espace) et donc qu'il soit réutilisable.
+
+![Fonctionnement du cron](cron.svg)
+
+Le serveur a de nouveau été modifié afin d'offrir la possibilité d'ajouter des taches automatisées à un Cron.
+La tache qu'exécute le cron actuellement est d'interroger la base de donnée tous les jours à une heure fixe et d'enregistrer le résultat reçu dans un fichier localement. Ce fichier est ensuite utilisé par le server afin de dessiner les graphiques retraçant l'historique des compteurs:
+
+![Fonctionnement graph historique](serverGraphCt.svg)
+
+**Check**
 
 ![Deuxième page dashboard](graph2.PNG)
-Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs, j'ai d'abord essayé de dessiner un graphique avec des lignes mais j'ai finalement opté pour des barres sans espaces entre elles afin de conservé l'affichage du nombre sur le rectangle. Ces expérimentations ont tout de même permis d'améliorer le composant afin de pouvoir dessiner plusieurs types de graphiques (ligne en pointillé, ligne normale, ligne qui rempli l'aire en dessous, barres avec plus ou moins d'espace) et donc qu'il soit réutilisable.
 
     - Description cron
     - Desctription historique
     - Description Affichage
     - Survol titre compteur
 
-![Fonctionnement du serveur pour le premier graph](serverLTGraph.svg)
+**Act - Modifications et corrections**
 
-    Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
+**Plan - Installation de l'application**
 
-![Fonctionnement du cron](cron.svg)
+La fin de mon stage étant proche, je consacre les derniers jours de celui-ci a installer l'application sur les écrans de monitoring.
 
-    Le nouveau serveur offre aussi la possibilité d'ajouter des taches automatisées à un Cron.
-    La tache qu'exécute le cron actuellement est d'interroger la base de donnée tous les jours à une heure fixe et d'enregistrer le résultat reçu dans un fichier localement. Ce fichier est ensuite utilisé par le server afin de dessiner les graphiques retraçant l'historique des compteurs.
+**Do**
 
-### Check -
+Clonnage du répertoire, ajout d'un ficher .env qui offre certains paramètrages à l'utilisateur et qui contient les credentials de la base de donnée, création d'un service windows afin que l'application se lance automatiquement au démarrage de l'écran et implémentation de la navigation au clavier (évenement clavier lié à l'évenement "clique sur la flèche du carousel").
 
-### Act - Modifications et corrections
+**Check**
 
-### Plan - Installation de l'application
+Je profite de mes derniers moments de libre afin d'apporter les dernières petites modification.
 
-- Lancement automatique
-- navigation clavier
+**Act**
 
-### Do - Réalisation
+Mon stage touche à sa fin et je n'ai malheureusement plus le temps de développer de nouveaux composants.
 
-### Check
+**Plan - Présentation**
 
-### Act - Modifications et corrections
+Nous termineront par une démonstration du résultat de mon travail à l'ensemble des équipes de la R&D Soft.
 
-### Plan - Présentation
+**Do**
 
-### Do -
+Préparation d'un diaporama (voir Présentation.pptx) et des différents points à aborder lors de ma présentation puis mise en place dans l'amphithéatre.
 
-### Check -
+**Check**
 
-### Act -
+Cette présentation a eu pour effet d'amener de nouveaux retours et points d'améliorations qui pourront être traités par l'équipe après mon départ.
 
-- .env
-- cache
-- Decoupage data / rendu
-
-### 3- Améliorations possibles
+### 2- Améliorations possibles
 
 Nouveaux composants :
 
@@ -313,7 +309,7 @@ Améliorations :
 - Séparer complétement les API et le rendu.
 - Inverser la couleur des points du carousel pour un rendu plus intuitif.
 
-### 4- Technologies utilisées
+### 3- Technologies utilisées
 
 Le but étant de créer une application web, les langages informatiques incontournables dont nous avons besoin sont **HTML**, **CSS** et **JavaScript**, ces langages sont aujourd'hui à la base de tous les sites web:
 
@@ -375,7 +371,7 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 - Structure du code HTML: le graphique était d'abord construit par état mais le construire par colonne permet de selectionner l'intégralité de la colonne plus facilement.
 - Changer toute la colone dans une même couleur n'était pas pertinent, passer au format de couleur HCL permet de modifier légérement la luminosité et de "tourner" la couleur de la colonne pour une animation plus discrete et naturelle.  
   ![prisme couleur HCL](hcl.jpg)
-- Structure du projet (découpage en composants, api, services et pages).
+- Structure du projet (découpage en composants, APIs, services et pages).
 - Le développement Back-end (server, API, base de donnée).
 - Accessibilité et réutilisabilité des composants pour les autres équipes
 - Formatage des dates
@@ -384,11 +380,12 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 ## IV- Ce que j’ai appris
 
 - Compétences de développement (langage JavaScript, node.js, react.js, d3.js, git, svg, .json, markdown)
-- Monde de l’entreprise (agilité)
-- Culture Informatique (web-assembly, scaling dynamique (cloud), intégration continue).
+- Monde de l’entreprise (méthodes agiles)
+- Culture Informatique (web-assembly, cloud, scaling dynamique, intégration continue).
 - Séparation collecte de data/formatage/rendu^.
 - Animation.
-- Architecture microservices (permet un scaling horizontal et de déployer, ajuster, puis redéployer indépendamment les différents services sans compromettre l'intégrité d'une application).
+- Architecture microservices (permet un scaling horizontal et de déployer, ajuster, puis redéployer indépendamment les différents services sans compromettre l'intégrité d'une application):
+  ![architecture microservice](microservice.png)
 
 ## V- Remerciements
 
