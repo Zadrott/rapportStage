@@ -124,7 +124,7 @@ La première étape a été d'être capable de dessiner un graphique très simpl
 
 On a obtenu un graphique en barres avec des valeurs arbitraires.
 
-**Act**
+**Act- Base de travail**
 
 Ce graphique n'est pas exploitable en l'état mais pourra servir de base pour la suite.
 
@@ -138,7 +138,7 @@ La modification des couleurs afin d'augmenter le contraste et d'incorporer le br
 
 Il donc été question de réaliser une ébauche des graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
 
-**Check -**
+**Check - Ébauche prête**
 
 ![Screen du premier jet du graphique demandé (hors Radiator)](premierJet.PNG)
 
@@ -170,11 +170,11 @@ L'image suivante montre le résultat final du premier graphique présent sur le 
 
 Une application de monitoring Next.js était déjà existante dans l'entreprise et utilisée par certaines équipes. Le prochain objectif a donc été d'inclure notre composant dans cette application.
 
-**Do**
+**Do - Transformation du composant et modification du serveur**
 
 Pour ce faire il a d'abord fallu transformer notre graphique en composant React et implémenter une API Bugzilla afin que le server puisse gerer nos requêtes.
 
-**Check**
+**Check - État du serveur et du graphique**
 
 ![Fonctionnement ancien serveur](oldServer.svg)
 
@@ -191,7 +191,7 @@ Un système de cache a également été mis en place afin d'améliorer les perfo
 
     Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
 
-**Act**
+**Act - Modifications et améliorations**
 
 Une fois le graph fonctionnel, j'ai pu de nouveau collecter les retours de l'équipe et proceder aux modifications nécessaires puis passer au deuxième composant.
 
@@ -207,23 +207,23 @@ Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis
 
 Après avoir récupéré les données via notre API et une nouvelle requête SQL, nous pouvons afficher un compteur basique sur notre page.
 
-**Check -**
+**Check - État du compteur**
 
 ![Nouveau compteur](newCounter.PNG)
 
 Ce nouveau compteur est simplement un composant React qui affiche les données recueillies en face de chaque état.
 
-**Act**
+**Act - Amélioration du compteur**
 
 A partir de ces compteurs, l'équipe a demandé à pouvoir visualiser la tendance de l'évolution de ces compteurs en tenant un historique.
 
-**Plan**
+**Plan - Historique du compteur**
 
 ![croquis Fabrice](croquisHistorique.jpg)
 
 Après avoir discuté avec certains membres de l'équipe, nous avons choisi de visualiser cet historique sous forme de graphique.
 
-**Do**
+**Do - Réalisation du Cron et du graphique**
 
 Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs, j'ai d'abord essayé de dessiner un graphique avec des lignes mais j'ai finalement opté pour des barres sans espaces entre elles afin de conservé l'affichage du nombre sur les rectangles. Ces expérimentations ont tout de même permis d'améliorer le composant afin de pouvoir dessiner plusieurs types de graphiques (ligne en pointillé, ligne normale, ligne qui rempli l'aire en dessous, barres avec plus ou moins d'espace) et donc qu'il soit réutilisable.
 
@@ -234,7 +234,7 @@ La tache qu'exécute le cron actuellement est d'interroger la base de donnée to
 
 ![Fonctionnement graph historique](serverGraphCt.svg)
 
-**Check**
+**Check - État du serveur et du composant**
 
 ![Deuxième page dashboard](graph2.PNG)
 
@@ -247,31 +247,31 @@ Des liens sont également disponibles sur le compteur pour acceder à la liste d
 
 Ajout de la possibilité de survoler la date sur le compteur afin de faire apparaitre le jour de la semaine correspondant ainsi que de survoler le titre pour faire apparaitre plus de détails (Modaris comprend enfait plusieurs produits).
 
-**Plan - Installation de l'application**
+**Plan - Installer l'application**
 
 La fin de mon stage étant proche, je consacre les derniers jours de celui-ci a installer l'application sur les écrans de monitoring.
 
-**Do**
+**Do - Installation**
 
 Clonnage du répertoire, ajout d'un ficher .env qui offre certains paramètrages à l'utilisateur et qui contient les credentials de la base de donnée, création d'un service windows afin que l'application se lance automatiquement au démarrage de l'écran et implémentation de la navigation au clavier (évenement clavier lié à l'évenement "clique sur la flèche du carousel").
 
-**Check**
+**Check - Dernières vérifications**
 
 Je profite de mes derniers moments de libre afin d'apporter les dernières petites modification.
 
-**Act**
+**Act - Fin du stage**
 
 Mon stage touche à sa fin et je n'ai malheureusement plus le temps de développer de nouveaux composants.
 
-**Plan - Présentation**
+**Plan - Démonstration en amphi**
 
 Nous termineront par une démonstration du résultat de mon travail à l'ensemble des équipes de la R&D Soft.
 
-**Do**
+**Do - Présentation**
 
 Préparation d'un diaporama (voir Présentation.pptx) et des différents points à aborder lors de ma présentation puis mise en place dans l'amphithéatre.
 
-**Check**
+**Check - Derniers point**
 
 Cette présentation a eu pour effet d'amener de nouveaux retours et points d'améliorations qui pourront être traités par l'équipe après mon départ.
 
