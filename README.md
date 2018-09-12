@@ -99,31 +99,7 @@ Ce stage étant mon premier dans ce domaine, il me permet également de découvr
 
 ### 1- Développement
 
-<!--
-- Création d'un Graph à l'aide de Node et de D3 avec des données statiques.
-- Prise en main du Radiator (plateforme next.js existante dans l'entreprise):
-  - Création d'un page home qui expose les écrans de monitoring de chaque équipes
-  - Gestion api
-- Création de l'écran de monitoring de la "team Burton":
-  - Portage et mise en fonction (data) du graph
-    - Découpage du graph en composants react
-    - Création api Bugzilla
-    - Création server custom (handle api)
-  - Améliorations :
-    - bugDetail
-    - Ajout légende
-    - Refresh data
-    - Flexibilité + paramétrabilité drawGraph -> ajout props
-    - Animation
-  - Deuxieme partie :
-    - Compteur
-    - Historique (cron)
-    - Deuxieme graph
-    - Navigation clavier
-- Installation (+ bat et service)
-- Démonstration en amphi
-
-**Activités parallèles**
+<!-- **Activités parallèles**
 
 - Readme
 - Démos, AIC, débriefs en // -->
@@ -145,6 +121,7 @@ La première étape a été d'être capable de dessiner un graphique très simpl
 **Check - Premier graph**
 
 ![Premier graphique simple](tuto.PNG)
+
 On a obtenu un graphique en barres avec des valeurs arbitraires.
 
 **Act**
@@ -154,11 +131,12 @@ Ce graphique n'est pas exploitable en l'état mais pourra servir de base pour la
 **Plan - Analyse des points d'amélioration**
 
 Nous avons ensuite organisé une réunion avec une partie de l'équipe pour traiter l'expression de besoin concernant le dashboard. L'équipe voulait automatiser et améliorer des graphiques qui étaient fait sur _Excel_.
+
 La modification des couleurs afin d'augmenter le contraste et d'incorporer le branding _Lectra_ était aussi un point d'amélioration évoqué.
 
 **Do - Graphique Lead Time**
 
-Il donc été question de réaliser une ébauche d'es graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
+Il donc été question de réaliser une ébauche des graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
 
 **Check -**
 
@@ -190,7 +168,7 @@ L'image suivante montre le résultat final du premier graphique présent sur le 
 
 **Plan - Inclure le graph dans l'application**
 
-Une application de monitoring Next.js été déjà existante dans l'entreprise et utilisée par certaines équipes. Le prochain objectif a donc été d'inclure notre composant dans cette application.
+Une application de monitoring Next.js était déjà existante dans l'entreprise et utilisée par certaines équipes. Le prochain objectif a donc été d'inclure notre composant dans cette application.
 
 **Do**
 
@@ -209,7 +187,7 @@ Pour ce faire il a d'abord fallu transformer notre graphique en composant React 
 Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.  
 Un système de cache a également été mis en place afin d'améliorer les performances en cas de nombreux composants impliquants de nombreuses requêtes similaires.
 
-![Fonctionnement du serveur pour le premier graph](serverLTgraph.svg)
+![Fonctionnement du serveur pour le premier graph](serverLTGraph.svg)
 
     Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
 
@@ -237,7 +215,7 @@ Ce nouveau compteur est simplement un composant React qui affiche les données r
 
 **Act**
 
-A partir de ces compteur, l'équipe a demandé à pouvoir visualiser la tendance de l'évolution de ces compteurs en tenant un historique.
+A partir de ces compteurs, l'équipe a demandé à pouvoir visualiser la tendance de l'évolution de ces compteurs en tenant un historique.
 
 **Plan**
 
@@ -247,7 +225,7 @@ Après avoir discuté avec certains membres de l'équipe, nous avons choisi de v
 
 **Do**
 
-Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs, j'ai d'abord essayé de dessiner un graphique avec des lignes mais j'ai finalement opté pour des barres sans espaces entre elles afin de conservé l'affichage du nombre sur le rectangle. Ces expérimentations ont tout de même permis d'améliorer le composant afin de pouvoir dessiner plusieurs types de graphiques (ligne en pointillé, ligne normale, ligne qui rempli l'aire en dessous, barres avec plus ou moins d'espace) et donc qu'il soit réutilisable.
+Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs, j'ai d'abord essayé de dessiner un graphique avec des lignes mais j'ai finalement opté pour des barres sans espaces entre elles afin de conservé l'affichage du nombre sur les rectangles. Ces expérimentations ont tout de même permis d'améliorer le composant afin de pouvoir dessiner plusieurs types de graphiques (ligne en pointillé, ligne normale, ligne qui rempli l'aire en dessous, barres avec plus ou moins d'espace) et donc qu'il soit réutilisable.
 
 ![Fonctionnement du cron](cron.svg)
 
@@ -260,12 +238,14 @@ La tache qu'exécute le cron actuellement est d'interroger la base de donnée to
 
 ![Deuxième page dashboard](graph2.PNG)
 
-    - Description cron
-    - Desctription historique
-    - Description Affichage
-    - Survol titre compteur
+Ce graphique est donc dessiné à partir des données sauvegardés sur la machine par le Cron.
+Comme sur notre premier graphique il est possible de selectionner une colonne pour cette fois çi afficher le compteur du jour correspondant à cette colonne.
+
+Des liens sont également disponibles sur le compteur pour acceder à la liste des bugs correspond à l'état ciblé sur Bugzilla.
 
 **Act - Modifications et corrections**
+
+Ajout de la possibilité de survoler la date sur le compteur afin de faire apparaitre le jour de la semaine correspondant ainsi que de survoler le titre pour faire apparaitre plus de détails (Modaris comprend enfait plusieurs produits).
 
 **Plan - Installation de l'application**
 
