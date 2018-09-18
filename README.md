@@ -17,7 +17,7 @@ Tuteur: BLIN Guillaume
     - [2- Améliorations possibles](#2--am%C3%A9liorations-possibles)
     - [3- Technologies utilisées](#3--technologies-utilis%C3%A9es)
   - [III- Difficultés](#iii--difficult%C3%A9s)
-  - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
+  - [IV- Ce que j’ai appris](#iv--ce-que-j%E2%80%99ai-appris)
   - [V- Remerciements](#v--remerciements)
 
 ## I- Présentation
@@ -369,6 +369,6 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 
 ## V- Remerciements
 
-Je tiens à remercier l'_université de Bordeaux_ ainsi que l'entreprise _Lectra_ pour m'avoir permit de réaliser ce stage, Magalie Soubré Emporio pour m'avoir aidé a le trouver, les équipes ArtCAD et Team Burton pour avoir été trés acceuillantes, Mr Guillaume Blin et Fabrice Guitteny pour avoir encadré ce stage ainsi que Guillaume Sévaux pour m'avoir accompagné tout au long de celui-ci et pour m'avoir appris énormément de choses.
+Je tiens à remercier l'_université de Bordeaux_ ainsi que l'entreprise _Lectra_ pour m'avoir permit de réaliser ce stage, Magalie Soubré Emporio pour m'avoir aidé a le trouver, les équipes ArtCAD et Team Burton pour avoir été trés acceuillantes, Mr Guillaume Blin et surtout (modif de guillaume) Fabrice Guitteny pour avoir encadré ce stage ainsi que Guillaume Sévaux pour m'avoir accompagné tout au long de celui-ci et pour m'avoir appris énormément de choses.
 
 ![logo université](université.png) ![logo Lectra](Lectra.jpg)
