@@ -106,43 +106,47 @@ Ce stage étant mon premier dans ce domaine, il me permet également de découvr
 
 En arrivant dans l'entreprise, mon maître de stage m'a fait visité le batiment R&D Soft et expliqué le fonctionnement général de l'entreprise. Nous avons ensuite visité les autres batiments présents sur le site et réglé les dernier détails administratifs.
 
-Aillant intégré une équipe dont le travail est basé sur l'amélioration continue, ce stage se déroule en suivant ce même principe:
+Aillant intégré une équipe dont le travail est basé sur l'amélioration continue, ce stage s'est déroulé en suivant ce principe:
 
 ![shéma amélioration continue](améliorationContinue.jpg)
 
 **Plan - Expression de besoin initiale**
 
-L'objectif étant de réaliser une application web, le stage démarre par l'apprentissage de certaines technologies que j'utiliserai par la suite ([voir II.3 - technologies utilisées](#3--technologies-utilis%C3%A9es))
+L'objectif étant de réaliser une serie d'outils de visualisation au sein d'un application web, le stage démarre par l'apprentissage de certaines technologies que j'utiliserai par la suite ([voir II.3 - technologies utilisées](#3--technologies-utilis%C3%A9es))
 
 **Do - Autoformation**
 
-La première étape a été d'être capable de dessiner un graphique très simple à l'aide des technologies apprises lors de ma formation
+La première étape a été d'être capable de dessiner un graphique simpliste à l'aide des technologies apprises lors de mon auto-formation.
 
 **Check - Premier graph**
 
 ![Premier graphique simple](tuto.PNG)
 
-On a obtenu un graphique en barres avec des valeurs arbitraires.
+On a obtenu un graphique en barres avec un jeu de valeurs arbitraires.
 
 **Act- Base de travail**
 
-Ce graphique n'est pas exploitable en l'état mais pourra servir de base pour la suite.
+Ce graphique n'est pas exploitable en l'état mais m'as permit d'experimenter ce que je venais d'apprendre, de plus pourra servir de base pour la suite.
 
 **Plan - Analyse des points d'amélioration**
 
-Nous avons ensuite organisé une réunion avec une partie de l'équipe pour traiter l'expression de besoin concernant le dashboard. L'équipe voulait automatiser et améliorer des graphiques qui étaient fait sur _Excel_.
-
-La modification des couleurs afin d'augmenter le contraste et d'incorporer le branding _Lectra_ était aussi un point d'amélioration évoqué.
+Nous avons ensuite organisé une réunion avec une partie de l'équipe pour traiter l'expression de besoin concernant le dashboard. L'équipe voulait: 
+* automatiser (la récupération de donné) 
+* améliorer des graphiques qui étaient fait sur _Excel_.
+    * changer les couleurs afin d'augmenter le contraste 
+    * incorporer le branding _Lectra_ était aussi un point d'amélioration évoqué.
+    * 
+* apporter de l'interractivité
 
 **Do - Graphique Lead Time**
 
-Il donc été question de réaliser une ébauche des graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur des données statiques mais ressemblant à celles existantes dans la base de donnée:
+Il a donc été question de réaliser une ébauche des graphiques que l'on veux faire apparaitre sur l'application, toujours en s'appuyant sur un jeu de données statiques mais réél cette fois ci:
 
 **Check - Ébauche prête**
 
 ![Screen du premier jet du graphique demandé (hors Radiator)](premierJet.PNG)
 
-Cette première ébauche, bien que basée sur des données statiques est proche du résultat attendu.
+Cette ébauche, est plus proche du résultat attendu.
 
 **Act - Modifications et corrections**
 
@@ -182,14 +186,16 @@ Pour ce faire il a d'abord fallu transformer notre graphique en composant React 
 
 ![Fonctionnement nouveau serveur](newServer.svg)
 
-    Après modification du serveur, si le navigateur demande une page comme celles qui existaient précédemment, le fonctionnement reste le même.
+    Après modification du serveur, si le navigateur demande une page comme celles qui existaient précédemment, le fonctionnement reste le même, mais expose aussi une API rest.
 
-Cependant le nouveau serveur offre la possibilité d'avoir recours à des API. Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète et renvoyer le résultat.  
+Si l'URL demandée correspond à celle d'une API le serveur va envoyer une requète à la base de donnée et renvoyer le résultat formaté.  
 Un système de cache a également été mis en place afin d'améliorer les performances en cas de nombreux composants impliquants de nombreuses requêtes similaires.
 
 ![Fonctionnement du serveur pour le premier graph](serverLTGraph.svg)
 
-    Ce fonctionnement est notamment le cas de l'affichage du premier graphique. Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique.
+    Ce fonctionnement est notamment  utilisé pour les affichages des graphiques:
+    <!-- reformule -->
+    Notre composant contenant l'URL de l'API, pour charger notre page, le navigateur interroge le serveur qui lui retourne la page après avoir récuperer les informations dans la base de donnée et dessiné le graphique
 
 **Act - Modifications et améliorations**
 
@@ -199,11 +205,11 @@ Une fois le graph fonctionnel, j'ai pu de nouveau collecter les retours de l'éq
 
 Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis à jour par l'équipe tous les matins lors de l'AIC.
 
-**Do - Réalisation**
-
 ![ancien compteur](oldCounter.jpg)
 
     Ici nous pouvons voir le compteur qui était mis à jour à la main en se connectant sur Bugzilla et en reportant le nombre de bugs.
+
+**Do - Réalisation**
 
 Après avoir récupéré les données via notre API et une nouvelle requête SQL, nous pouvons afficher un compteur basique sur notre page.
 
@@ -257,15 +263,15 @@ Clonnage du répertoire, ajout d'un ficher .env qui offre certains paramètrages
 
 **Check - Dernières vérifications**
 
-Je profite de mes derniers moments de libre afin d'apporter les dernières petites modification.
+Je profite de mes derniers moments de libre afin d'apporter les dernières petites modification. <!-- lesquelles -->
 
 **Act - Fin du stage**
 
-Mon stage touche à sa fin et je n'ai malheureusement plus le temps de développer de nouveaux composants.
+Mon stage touche à sa fin et je n'ai malheureusement plus le temps de développer de nouveaux composants. <!-- vide -_- -->
 
 **Plan - Démonstration en amphi**
 
-Nous termineront par une démonstration du résultat de mon travail à l'ensemble des équipes de la R&D Soft.
+Nous termineront par une démonstration du résultat de mon travail à l'ensemble des équipes de la R&D Soft. 
 
 **Do - Présentation**
 
@@ -291,7 +297,7 @@ Améliorations :
 
 ### 3- Technologies utilisées
 
-Le but étant de créer une application web, les langages informatiques incontournables dont nous avons besoin sont **HTML**, **CSS** et **JavaScript**, ces langages sont aujourd'hui à la base de tous les sites web:
+Le but étant de créer des outils au sein d'une application web, **HTML**, **CSS** et **JavaScript** sont incontournables. Ces langages sont aujourd'hui à la base de tous les sites web:
 
 - **HTML (HyperText Markup Language)** a fait son apparition dès 1991 lors du lancement du Web, son rôle est de gérer et organiser le contenu de la page à l'aide de balises.
 
@@ -301,7 +307,7 @@ Le but étant de créer une application web, les langages informatiques incontou
   C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe.  
   Le langage supporte donc le paradigme _objet_, _impératif_ et _fonctionnel_. **JavaScript** est également le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environs 500 000 paquets en août 2017.
 
-L'application de monitoring déjà en place dans l'entreprise est construite à partir de composants **React.js** délivrés par un serveur **Node.js** et **Next.js**:
+L'application de monitoring déjà en place dans l'entreprise est construite avec le Framework **Next.js** (qui utilise **React.js** et **Node.js**)
 
 - **React.js** est une bibliothèque **JavaScript** libre développée par _Facebook_ depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page (ou portion) **HTML** à chaque changement d'état.  
   Elle ne gère que l'interface de l'application, considéré comme la vue dans le **modèle MVC**. La bibliothèque se démarque de ses concurrents par sa flexibilité et ses performances, en travaillant avec un **DOM virtuel** et en ne mettant à jour le rendu dans le navigateur qu'en cas de nécessité.  
@@ -310,15 +316,15 @@ L'application de monitoring déjà en place dans l'entreprise est construite à 
 - **Node.js** est une plateforme logicielle libre et événementielle. Cette plateforme est orientée vers les applications réseau qui doivent pouvoir monter en charge.  
   Créé par _Ryan Dahl_ en 2009, **Node.js** est un environnement bas niveau permettant l’exécution de **JavaScript** côté serveur.
 
-- **Next.js** permet d’effectuer le rendu des applications **React** par les serveurs.  
+- **Next.js** permet d’effectuer le rendu des applications **React** servis avec un serveurs nodejs.  
   Il permet aussi d'effectuer un routage côté client qui se présente comme les applications universelles natives.  
-   **Next.js** est développé par ZEIT et bâti sur **React**, **Webpack** et **Babel**
+   **Next.js** est développé par ZEIT et bâti sur **React**, **Webpack**, **Babel**, ...
 
 Les graphiques réalisés rendent comptes de données du logiciel **Bugzilla** présentes sur un serveur **MySQL**. Elles sont extraite à l'aide d'une **API** créée pour l'occasion et passées à notre composant à travers un **HOC**.  
 Ces graphiques utilisent le format de dessin **SVG** qui, de part sa nature vectorielle, offre la possibilité de zoomer ou de dézoomer à l'infini sans jamais déformer l'image. L'utilisation de ce format est rendu possible dans notre application par l'utilisation de la bibliothèque graphique **D3.js**.  
 Le deuxieme graph nécessite également le stockage de l'historique de la liste des bugs. Cet historique est stocké sous forme de fichiers **JSON** afin d'être réutilisable facilement dans le code **Javascript**
 
-- **Bugzilla** est un logiciel libre de système de suivi de problèmes avec interface web.  
+- **Bugzilla** est un logiciel libre de système de suivi de bug avec interface web.  
   Développé et utilisé par l'organisation _Mozilla_, ce logiciel gère le suivi de bugs (ou de « demandes d'améliorations ») provenant de sites, logiciels et courriels sous la forme de « tickets ».  
   Les bugs sont classés en fonction de leur étape d'étude (arrivée, bug non confirmé, prise en compte bug, bug confirmé, en cours d'étude, résolu, solution insatisfaisante, solution satisfaisante).
 
@@ -346,7 +352,7 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 
 ## III- Difficultés
 
-- Apprentissage d'un nouveau langage et de nouvelles méthodes.
+- Apprentissage d'un nouveau langage (lequel?) et de nouvelles méthodes (idem).
 - Cibler les attentes de l'utilisateur.
 - Structure du code HTML: le graphique était d'abord construit par état mais le construire par colonne permet de selectionner l'intégralité de la colonne plus facilement.
 - Changer toute la colone dans une même couleur n'était pas pertinent, passer au format de couleur HCL permet de modifier légérement la luminosité et de "tourner" la couleur de la colonne pour une animation plus discrete et naturelle.  
@@ -362,7 +368,7 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 - Compétences de développement (langage JavaScript, node.js, react.js, d3.js, git, svg, .json, markdown)
 - Monde de l’entreprise (méthodes agiles)
 - Culture Informatique (web-assembly, cloud, scaling dynamique, intégration continue).
-- Séparation collecte de data/formatage/rendu^.
+- Séparation collecte de data/formatage/rendu^. (j aimerai en voir beaucoup plus à ce sujet)
 - Animation.
 - Architecture microservices (permet un scaling horizontal et de déployer, ajuster, puis redéployer indépendamment les différents services sans compromettre l'intégrité d'une application):
   ![architecture microservice](microservice.png)
