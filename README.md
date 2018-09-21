@@ -1,22 +1,23 @@
-# Rapport de stage
-
-Auteur: VERGNE Anthony  
-Maitre de stage: GUITTENY Fabrice  
-Tuteur: BLIN Guillaume
-
-18 Juin - 31 Août 2018
-
-- [Rapport de stage](#rapport-de-stage)
-  - [I- Présentation](#i--pr%C3%A9sentation)
-    - [1. L'entreprise](#1-lentreprise)
-    - [2. L'environement](#2-lenvironement)
-    - [3. L'équipe](#3-l%C3%A9quipe)
-    - [4. Le sujet](#4-le-sujet)
-  - [II- Réalisation de l'application](#ii--r%C3%A9alisation-de-lapplication)
-    - [1- Développement](#1--d%C3%A9veloppement)
+ # Rapport de stage
+ 
+ Auteur: VERGNE Anthony  
+ Maitre de stage: GUITTENY Fabrice  
+ Tuteur: BLIN Guillaume
+ 
+ 18 Juin - 31 Août 2018
+ 
+ - [Rapport de stage](#rapport-de-stage)
+   - [I- Présentation](#i--pr%C3%A9sentation)
+     - [1. L'entreprise](#1-lentreprise)
+     - [2. L'environement](#2-lenvironement)
+     - [3. L'équipe](#3-l%C3%A9quipe)
+     - [4. Le sujet](#4-le-sujet)
+   - [II- Réalisation de l'application](#ii--r%C3%A9alisation-de-lapplication)
+     - [1- Développement](#1--d%C3%A9veloppement)
     - [2- Améliorations possibles](#2--am%C3%A9liorations-possibles)
     - [3- Technologies utilisées](#3--technologies-utilis%C3%A9es)
   - [III- Difficultés](#iii--difficult%C3%A9s)
+  - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
   - [IV- Ce que j’ai appris](#iv--ce-que-j%E2%80%99ai-appris)
   - [V- Remerciements](#v--remerciements)
 
