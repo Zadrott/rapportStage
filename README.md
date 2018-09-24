@@ -1,39 +1,40 @@
-# Rapport de stage
-
-Auteur: VERGNE Anthony  
-Maitre de stage: GUITTENY Fabrice  
-Tuteur: BLIN Guillaume
-
-18 Juin - 31 Août 2018
-
-- [Rapport de stage](#rapport-de-stage)
-  - [I- Présentation](#i--pr%C3%A9sentation)
-    - [1. L'entreprise](#1-lentreprise)
-    - [2. L'environement](#2-lenvironement)
-    - [3. L'équipe](#3-l%C3%A9quipe)
-    - [4. Le sujet](#4-le-sujet)
-  - [II- Réalisation de l'application](#ii--r%C3%A9alisation-de-lapplication)
-    - [1- Développement](#1--d%C3%A9veloppement)
-    - [2- Améliorations possibles](#2--am%C3%A9liorations-possibles)
-    - [3- Technologies utilisées](#3--technologies-utilis%C3%A9es)
-  - [III- Difficultés](#iii--difficult%C3%A9s)
+ # Rapport de stage
+ 
+ Auteur: VERGNE Anthony  
+ Maitre de stage: GUITTENY Fabrice  
+ Tuteur: BLIN Guillaume
+ 
+ 18 Juin - 31 Août 2018
+ 
+ - [Rapport de stage](#rapport-de-stage)
+   - [I- Présentation](#i--présentation)
+     - [1. L'entreprise](#1-l'entreprise)
+     - [2. L'environement](#2-l'environement)
+     - [3. L'équipe](#3-l'équipe)
+     - [4. Le sujet](#4-le-sujet)
+   - [II- Réalisation de l'application](#ii--réalisation-de-l'application)
+     - [1- Développement](#1--développement)
+    - [2- Améliorations possibles](#2--améliorations-possibles)
+    - [3- Technologies utilisées](#3--technologies-utilisées)
+  - [III- Difficultés](#iii--difficultés)
   - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
   - [V- Remerciements](#v--remerciements)
+
 
 ## I- Présentation
 
 ### 1. L'entreprise
 
-_Lectra_ est le numéro un mondial des solutions technologiques intégrées - logiciels, équipements de CFAO et services associés - dédiées aux entreprises qui utilisent des tissus, du cuir, des textiles techniques et des matériaux composites dans la fabrication de leurs produits. Elle s’adresse à de grands marchés mondiaux : la mode, l’automobile, l’ameublement, ainsi qu’à une grande variété d’autres industries (l’aéronautique, l’industrie nautique, l’éolien).
+ _Lectra_ est le numéro un mondial des solutions technologiques intégrées - logiciels, équipements de CFAO et services associés - dédiées aux entreprises qui utilisent des tissus, du cuir, des textiles techniques et des matériaux composites dans la fabrication de leurs produits. Elle s’adresse à de grands marchés mondiaux : la mode, l’automobile, l’ameublement, ainsi qu’à une grande variété d’autres industries (l’aéronautique, l’industrie nautique, l’éolien).
 
-Entreprise transnationale forte _Lectra_ apporte des solutions métiers spécifiques à chaque industrie qui permettent d’automatiser et d’optimiser la création, le développement des produits et leur production. Dans la mode, elles sont intégrées dans une offre sans équivalent pour la gestion des collections, facilitant la collaboration et valorisant le capital créatif des marques.
+Entreprise transnationale basée à Cestas, _Lectra_ apporte des solutions métiers spécifiques à chaque industrie qui permettent d’automatiser et d’optimiser la création, le développement des produits et leur production. Dans la mode, elles sont intégrées dans une offre de gestion des collections, facilitant la collaboration et valorisant le capital créatif des marques.
 
 Quelques chiffres illustrant l'importance de l'entreprise:  
 ![Chiffres](chiffres.jpg)
 
 Depuis sa création en 1973, _Lectra_ n’a cessé d’innover pour assurer à ses clients un accompagnement à long terme sans faille.
 
-Pour répondre aux demandes changeantes du marché et renforcer leur compétitivité, les clients de _Lectra_ entreprennent des déploiements technologiques d’envergure et mettent en place des organisations plus collaboratives, agiles et efficaces, qu’ils savent indispensables à leur mutation industrielle. Pionnière de l’Internet industriel des objets dès 2007, _Lectra_ est le seul acteur de son secteur à proposer une offre complète à forte valeur ajoutée essentielle au déploiement de _l’Industrie 4.0_.
+Pour répondre aux demandes changeantes du marché et renforcer leur compétitivité, les clients de _Lectra_ entreprennent des déploiements technologiques d’envergure et mettent en place des organisations plus collaboratives, agiles et efficaces, qu’ils savent indispensables à leur mutation industrielle. 
 
 _Lectra_ combinera progressivement, dès 2017, Software as a Service (SaaS) et cloud pour offrir à ses clients la flexibilité qui les aidera à tirer parti des solutions et services intelligents et à se doter d’outils de production compatibles avec les concepts de l’usine connectée.
 
@@ -50,22 +51,22 @@ Le cycle de production est constitué principalement de trois phases : la créat
 
 Le département recherche et développement software est donc découpé en plusieurs équipes réparties sur les différents projets de l'entreprise.
 
-Ces équipes sont aussi encadrés par des managers et des coach en agilité.
+Ces équipes sont aussi encadrées par des managers et des coachs en agilité.
 
-L'agilé (ou méthodes agiles) définit une approche de gestion de projet qui prend le contre-pied des approches traditionnelles prédictives et séquentielles de type cycle en V ou waterfall (en cascade). La notion même de "gestion de projet" est remise en question au profit de "gestion de produit", de façon à raisonner davantage "produit" que "projet".  
+L'agilité (ou méthodes agiles) définit une approche de gestion de projet qui prend le contre-pied des approches traditionnelles prédictives et séquentielles de type cycle en V ou waterfall (en cascade). La notion même de "gestion de projet" est remise en question au profit de "gestion de produit", de façon à raisonner davantage "produit" que "projet".  
 L’agilité est aussi la capacité d’une organisation à créer de la valeur et à ravir son client, tout en favorisant et en s’adaptant -à temps- aux changements de son environnement.
 
 Un des principes du développement agile est de garantir des cycles brefs de développement en imposant une date de livraison fixe, ce qui permet d’obtenir un feedback rapide, optimisant ainsi en permanence la valeur des logiciels pour les clients et leur garantissant que les logiciels leur parviendront à la date prévue.
 
 La méthode scrum utilisée ici relève d’une démarche d’amélioration continue.  
-Chaque sprint (2 semaines) se termine par une rétrospective destinée à identifier les points d’amélioration et les actions à mettre en œuvre lors du sprint suivant.  
+Chaque sprint (2 semaines) se termine par une démo du travail réalisé pendant le sprint ainsi que d'une rétrospective destinée à identifier les points d’amélioration et les actions à mettre en œuvre lors du sprint suivant.
 Ont lieu également chaques matins des stand-up meetings afin de faire le point sur les nouvelles contraintes et sur l'avancement réalisé la journée précedante.
 
 ### 3. L'équipe
 
-Lors de ce stage j'ai intégré l'équipe **Team Burton** qui fait partie des équipes CAD de _Lectra_. Mon équipe est composé de 9 membres qui ont pour charge d'améliorer et maintenir **Modaris**
+Lors de ce stage j'ai intégré l'équipe **Team Burton** qui fait partie des équipes CAD de _Lectra_. Mon équipe est composé de 9 membres (6 développeurs, 2 valideurs et un ProductOwner - chargé de la définition du produit) qui ont pour charge d'améliorer et maintenir **Modaris** et font partie intégrante des macros projets orientés Cloud qui sont en cours d'élaboration.
 
-- **Modaris** est l’un des logiciels central de _Lectra_, il permet de concevoir des patrons 2D et de programmer les machines de découpes vendues par la société, c'est le leader mondial des solutions de patronage. Il a été créé pour répondre parfaitement aux exigences de productivité ainsi qu’au type d’activité et au niveau de compétence des utilisateurs.
+- **Modaris** est l’un des logiciels central de _Lectra_, il permet de concevoir des patrons 2D, de les grader et de les industrialiser en vue de leur placmeent puis découpe sur les machines vendues par la société. C'est le leader mondial des solutions de patronage. Il a été créé pour répondre parfaitement aux exigences de productivité ainsi qu’au type d’activité et au niveau de compétence des utilisateurs.
 
   Son environnement présente des outils de patronage traditionnels permettant de générer des patrons plus rapidement : la création de patrons totalement nouveaux ou à partir de patrons existants, la gradation en reproduisant des méthodes traditionnelles ou avancées, la vérification au moyen de techniques de pointe, les tâches d’industrialisation et de pré-production réalisées au début du processus de développement pour un gain de temps considérable.
 
@@ -84,13 +85,13 @@ Lors de ce stage j'ai intégré l'équipe **Team Burton** qui fait partie des é
 
 **Problèmatique**:
 
-    Dans un cadre agile, l'équipe est confronté à des taches répétitives et chronophages liées au suivi de leurs activités, par exemple tenir à jour un tableau répertoriant le nombre de bugs en cours ou l'état d'une tache.
+    Dans un cadre agile, l'équipe est confronté à des taches répétitives et chronophages liées au suivi de leurs activités, par exemple tenir à jour un tableau répertoriant le nombre de bugs en cours ou l'état d'une tâche.
 
     Ainsi, dans le cadre de ma mission, j'ai eu pour objectif d'offrir à l'équipe des outils sur mesure qui auront pour but d'améliorer le travail de l'équipe.
 
-_Lectra_ offre depuis peu à toute ses équipes des écrans de monitorings. Ainsi mon équipe a décidé d'automatisé un certain nombre de tache récurente. Mon objectif est donc de réaliser un certain nombre d'affichage sur ces écrans. J'aurai donc à réaliser un certain nombre de graphiques, compteurs et APIs.  
+_Lectra_ offre depuis peu à toute ses équipes des écrans de monitorings. Ainsi mon équipe a décidé d'automatiser un certain nombre de tâches récurentes. Mon objectif est donc de proposer et de réaliser différent affichages sur ces écrans. J'aurai donc à réaliser un certain nombre de graphiques, compteurs et APIs.  
 Ces futurs éléments visuels et intuitifs permettront d'avoir un aperçu rapide des activités et de leur évolution.  
-Ces outils leur feront gagner un temps précieux et leur permettront de se concentrer sur leurs activités principales afin de répondre plus rapidement à la demande du client ou de proposer de nouvelles fonctionnalités.
+Ces outils leur feront gagner un temps précieux et leur permettront de se concentrer sur leurs activités principales afin de répondre plus rapidement à la demande du client ou de proposer de nouvelles fonctionnalités. Ils seront également une aide importante pour les prises de décisions concernant la priorité des corrections à mettre en oeuvre.
 
 Pour moi ce stage est l'occasion d'acquérir des compétences en développement web, plus particulièrement en Javascript, mais aussi de découvrir ou d'approfondir certains concepts plus généraux de l'informatique.  
 Ce stage étant mon premier dans ce domaine, il me permet également de découvrir la vie et le travail en entreprise au sein d'une équipe de développeurs expérimentés.
@@ -99,14 +100,11 @@ Ce stage étant mon premier dans ce domaine, il me permet également de découvr
 
 ### 1- Développement
 
-<!-- **Activités parallèles**
-
-- Readme
-- Démos, AIC, débriefs en // -->
-
 En arrivant dans l'entreprise, mon maître de stage m'a fait visité le batiment R&D Soft et expliqué le fonctionnement général de l'entreprise. Nous avons ensuite visité les autres batiments présents sur le site et réglé les dernier détails administratifs.
 
-Aillant intégré une équipe dont le travail est basé sur l'amélioration continue, ce stage s'est déroulé en suivant ce principe:
+
+Aillant intégré une équipe dont une des composante essentielle est l'amélioration continue, ce stage s'est déroulé en suivant ce même principe :
+
 
 ![shéma amélioration continue](améliorationContinue.jpg)
 
@@ -150,23 +148,23 @@ Cette ébauche, est plus proche du résultat attendu.
 
 **Act - Modifications et corrections**
 
-Après présentation de mon travail à l'équipe et prise en compte des retours, j'ai pu apporter quelques améliorations et relier le graphique à la base de donnée.
+Après présentation de mon travail à l'équipe et prise en compte des retours, j'ai pu apporter quelques améliorations et relier le graphique à la base de données.
 
-L'image suivante montre le résultat final du premier graphique présent sur le Dashboard:
+L'image suivante montre le résultat final du premier graphique présent sur le Dashboard :
 
 ![Premiere page dashboard](graph.PNG)
 
 - Ce graphique montre le temps passé sur chaque bug.  
-  Ce temps est divisé en 3 étapes: d'abord la prise en charge puis la correction et enfin la validation qui correspondent à des status présents sur _Bugzilla_.
+  Ce temps est divisé en 3 étapes : d'abord la prise en charge puis la correction et enfin la validation qui correspondent à des status présents sur _Bugzilla_.
 
 - Cela a necessité la création d'une **API** pour récupérer les données sur le serveur Bugzilla.  
   Le nombre de jours ouvrés est ensuite calculé à partir de la date de modification des status puis ces données sont formatées et passées au composant Graphique via notre **HOC** (voir [II.3](#3--technologies-utilis%C3%A9es)).
 
-- Certaines fonctionnalités ont également été ajouté par rapport au graphique disponible sur _Excel_:
+- Certaines fonctionnalités ont également été ajouté par rapport au graphique disponible sur _Excel_ :
 
   - Lorsque l'on clique sur l'un des bugs présents sur le graphique, une vignette s'ouvre sur la droite de la page et indique plus d'informations concernant ce bug. On y retrouve la version ciblée pour cette correction, la criticité du bug, le temps total passé dessus ainsi qu'un lien direct vers la page Bugzilla de ce bug.
 
-  - L'ajout d'une légende a également été effectué par rapport à la première version du graphique. En plus de donner des informations concernant l'affichage du graphique, cette légende apporte une interraction avec l'utilisateur. En effet cocher ou décocher un element de la légende permet de l'afficher ou de le masquer du rendu à l'écran comme ci-dessous:
+  - L'ajout d'une légende a également été effectué par rapport à la première version du graphique. En plus de donner des informations concernant l'affichage du graphique, cette légende apporte une interraction avec l'utilisateur. En effet cocher ou décocher un element de la légende permet de l'afficher ou de le masquer du rendu à l'écran comme ci-dessous :
 
     ![Exemple d'interraction légende](cacherElement.PNG)
 
@@ -203,11 +201,11 @@ Une fois le graph fonctionnel, j'ai pu de nouveau collecter les retours de l'éq
 
 **Plan - Compteur Bugzilla**
 
-Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis à jour par l'équipe tous les matins lors de l'AIC.
+Le deuxieme objectif été d'améliorer et d'automatiser un compteur de bugs mis à jour par l'équipe tous les matins lors du daily scum ou stand-up meeting color:yellow (AIC - Animation Interval court est un terme purmement Lectra).
 
 ![ancien compteur](oldCounter.jpg)
 
-    Ici nous pouvons voir le compteur qui était mis à jour à la main en se connectant sur Bugzilla et en reportant le nombre de bugs.
+    Ici nous pouvons voir le compteur qui était mis à jour à la main en se connectant sur Bugzilla et en reportant le nombre de bugs. Cette opération, en plus d'être fastidieuse ne permet pas de faire un réel suivi de l'évolution du nombre de bugs puisqu'il n'y a pas d'historisation. 
 
 **Do - Réalisation**
 
@@ -236,7 +234,7 @@ Le but étant cette fois-ci d'avoir un aperçu de la tendance du nombre de bugs,
 ![Fonctionnement du cron](cron.svg)
 
 Le serveur a de nouveau été modifié afin d'offrir la possibilité d'ajouter des taches automatisées à un Cron.
-La tache qu'exécute le cron actuellement est d'interroger la base de donnée tous les jours à une heure fixe et d'enregistrer le résultat reçu dans un fichier localement. Ce fichier est ensuite utilisé par le server afin de dessiner les graphiques retraçant l'historique des compteurs:
+La tache qu'exécute le cron actuellement est d'interroger la base de donnée tous les jours à une heure fixe et d'enregistrer le résultat reçu dans un fichier localement. Ce fichier est ensuite utilisé par le serveur afin de dessiner les graphiques retraçant l'historique des compteurs :
 
 ![Fonctionnement graph historique](serverGraphCt.svg)
 
@@ -263,7 +261,9 @@ Clonnage du répertoire, ajout d'un ficher .env qui offre certains paramètrages
 
 **Check - Dernières vérifications**
 
+
 Je profite de mes derniers moments de libre afin d'apporter les dernières petites modification. <!-- lesquelles -->
+
 
 **Act - Fin du stage**
 
@@ -272,6 +272,7 @@ Mon stage touche à sa fin et je n'ai malheureusement plus le temps de développ
 **Plan - Démonstration en amphi**
 
 Nous termineront par une démonstration du résultat de mon travail à l'ensemble des équipes de la R&D Soft. 
+
 
 **Do - Présentation**
 
@@ -285,8 +286,8 @@ Cette présentation a eu pour effet d'amener de nouveaux retours et points d'am�
 
 Nouveaux composants :
 
-- Creer d'autres graphs concernant le support et la maintenance de Modaris (nombre d'appels au call-center, volumétrie des taches, évolution des bugs découpée pour chaque produit), ect.
-- Ajout d'un composants **Jenkins** pour suivre les logs, ce composant était présent sur l'ancienne application de monitoring.
+- Creer d'autres graphiques concernant le support et la maintenance de Modaris (nombre d'appels au call-center, volumétrie des tâches, évolution des bugs découpée pour chaque produit), etc.
+- Ajout d'un composant **Jenkins** pour suivre les logs, ce composant était présent sur l'ancienne application de monitoring.
 
 Améliorations :
 
@@ -297,13 +298,15 @@ Améliorations :
 
 ### 3- Technologies utilisées
 
+
 Le but étant de créer des outils au sein d'une application web, **HTML**, **CSS** et **JavaScript** sont incontournables. Ces langages sont aujourd'hui à la base de tous les sites web:
+
 
 - **HTML (HyperText Markup Language)** a fait son apparition dès 1991 lors du lancement du Web, son rôle est de gérer et organiser le contenu de la page à l'aide de balises.
 
 - **CSS (Cascading Style Sheets ou Feuilles de style)** quant à lui a pour rôle de gérer l'apparence de la page web (agencement, positionnement, décoration, couleurs, taille du texte…). Ce langage est venu compléter le **HTML** en 1996.
 
-- **JavaScript** est un langage scripté conçu pour rendre les pages web interactives .  
+- **JavaScript** est un langage scripté conçu pour rendre les pages web interactives.  
   C'est un langage orienté objet à prototype, c'est-à-dire que les bases du langage et ses principales interfaces sont fournies par des objets qui ne sont pas des instances de classes, mais qui sont chacun équipés de constructeurs permettant de créer leurs propriétés, et notamment une propriété de prototypage qui permet d'en créer des objets héritiers personnalisés. En outre, les fonctions sont des objets de première classe.  
   Le langage supporte donc le paradigme _objet_, _impératif_ et _fonctionnel_. **JavaScript** est également le langage possédant le plus large écosystème grâce à son gestionnaire de dépendances npm, avec environs 500 000 paquets en août 2017.
 
@@ -320,7 +323,7 @@ L'application de monitoring déjà en place dans l'entreprise est construite ave
   Il permet aussi d'effectuer un routage côté client qui se présente comme les applications universelles natives.  
    **Next.js** est développé par ZEIT et bâti sur **React**, **Webpack**, **Babel**, ...
 
-Les graphiques réalisés rendent comptes de données du logiciel **Bugzilla** présentes sur un serveur **MySQL**. Elles sont extraite à l'aide d'une **API** créée pour l'occasion et passées à notre composant à travers un **HOC**.  
+Les graphiques réalisés rendent comptes de données du logiciel **Bugzilla** présentes sur un serveur **MySQL**. Elles sont extraites à l'aide d'une **API** créée pour l'occasion et passée à notre composant à travers un **HOC**.  
 Ces graphiques utilisent le format de dessin **SVG** qui, de part sa nature vectorielle, offre la possibilité de zoomer ou de dézoomer à l'infini sans jamais déformer l'image. L'utilisation de ce format est rendu possible dans notre application par l'utilisation de la bibliothèque graphique **D3.js**.  
 Le deuxieme graph nécessite également le stockage de l'historique de la liste des bugs. Cet historique est stocké sous forme de fichiers **JSON** afin d'être réutilisable facilement dans le code **Javascript**
 
@@ -355,7 +358,7 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 - Apprentissage d'un nouveau langage (lequel?) et de nouvelles méthodes (idem).
 - Cibler les attentes de l'utilisateur.
 - Structure du code HTML: le graphique était d'abord construit par état mais le construire par colonne permet de selectionner l'intégralité de la colonne plus facilement.
-- Changer toute la colone dans une même couleur n'était pas pertinent, passer au format de couleur HCL permet de modifier légérement la luminosité et de "tourner" la couleur de la colonne pour une animation plus discrete et naturelle.  
+- Changer toute la colonne dans une même couleur n'était pas pertinent, passer au format de couleur HCL permet de modifier légérement la luminosité et de "tourner" la couleur de la colonne pour une animation plus discrete et naturelle.  
   ![prisme couleur HCL](hcl.jpg)
 - Structure du projet (découpage en composants, APIs, services et pages).
 - Le développement Back-end (server, API, base de donnée).
@@ -364,7 +367,6 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 - Chiffrage / gestion du temps
 
 ## IV- Ce que j’ai appris
-
 - Compétences de développement (langage JavaScript, node.js, react.js, d3.js, git, svg, .json, markdown)
 - Monde de l’entreprise (méthodes agiles)
 - Culture Informatique (web-assembly, cloud, scaling dynamique, intégration continue).
@@ -375,6 +377,6 @@ Le projet de dashboards se trouve sur un dépot **GitLab** qui permet de facilit
 
 ## V- Remerciements
 
-Je tiens à remercier l'_université de Bordeaux_ ainsi que l'entreprise _Lectra_ pour m'avoir permit de réaliser ce stage, Magalie Soubré Emporio pour m'avoir aidé a le trouver, les équipes ArtCAD et Team Burton pour avoir été trés acceuillantes, Mr Guillaume Blin et Fabrice Guitteny pour avoir encadré ce stage ainsi que Guillaume Sévaux pour m'avoir accompagné tout au long de celui-ci et pour m'avoir appris énormément de choses.
+Je tiens à remercier l'_université de Bordeaux_ ainsi que l'entreprise _Lectra_ pour m'avoir permit de réaliser ce stage, Magalie Soubré Emporio pour m'avoir aidé a le trouver, les équipes ArtCAD et Team Burton pour avoir été trés accueillantes, M Guillaume Blin et Fabrice Guitteny pour avoir encadré ce stage ainsi que Guillaume Sévaux pour m'avoir accompagné tout au long de celui-ci et pour m'avoir appris énormément de choses.
 
 ![logo université](université.png) ![logo Lectra](Lectra.jpg)
