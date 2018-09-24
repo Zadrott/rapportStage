@@ -7,52 +7,34 @@
  18 Juin - 31 Août 2018
  
  - [Rapport de stage](#rapport-de-stage)
-   - [I- Présentation](#i--pr%C3%A9sentation)
-     - [1. L'entreprise](#1-lentreprise)
-     - [2. L'environement](#2-lenvironement)
-     - [3. L'équipe](#3-l%C3%A9quipe)
+   - [I- Présentation](#i--présentation)
+     - [1. L'entreprise](#1-l'entreprise)
+     - [2. L'environement](#2-l'environement)
+     - [3. L'équipe](#3-l'équipe)
      - [4. Le sujet](#4-le-sujet)
-   - [II- Réalisation de l'application](#ii--r%C3%A9alisation-de-lapplication)
-     - [1- Développement](#1--d%C3%A9veloppement)
-    - [2- Améliorations possibles](#2--am%C3%A9liorations-possibles)
-    - [3- Technologies utilisées](#3--technologies-utilis%C3%A9es)
-  - [III- Difficultés](#iii--difficult%C3%A9s)
+   - [II- Réalisation de l'application](#ii--réalisation-de-l'application)
+     - [1- Développement](#1--développement)
+    - [2- Améliorations possibles](#2--améliorations-possibles)
+    - [3- Technologies utilisées](#3--technologies-utilisées)
+  - [III- Difficultés](#iii--difficultés)
   - [IV- Ce que j’ai appris](#iv--ce-que-jai-appris)
-  - [IV- Ce que j’ai appris](#iv--ce-que-j%E2%80%99ai-appris)
   - [V- Remerciements](#v--remerciements)
 
-<p style='color:green; background-color:yellow; text-align:center'>
-Tout ce qui sui ne sont que commentaires et suggestions, tu prends ce que tu juge pertinent :)
-</p>
 
 ## I- Présentation
 
 ### 1. L'entreprise
 
-
-<p style='color:green; background-color:yellow; text-align:center'>
-sur cette partie il faut seulement être vigillant à ne pas faire trop "plaquette commerciale"
-</p>
  _Lectra_ est le numéro un mondial des solutions technologiques intégrées - logiciels, équipements de CFAO et services associés - dédiées aux entreprises qui utilisent des tissus, du cuir, des textiles techniques et des matériaux composites dans la fabrication de leurs produits. Elle s’adresse à de grands marchés mondiaux : la mode, l’automobile, l’ameublement, ainsi qu’à une grande variété d’autres industries (l’aéronautique, l’industrie nautique, l’éolien).
 
-<p style='color:green; background-color:yellow; text-align:center'>
-la phrase ci-dessous notamment, cf les mots en gras<br>
-Entreprise transnationale basée à Cestas, _Lectra apporte ...
-</p>
-Entreprise transnationale **forte** _Lectra_ apporte des solutions métiers spécifiques à chaque industrie qui permettent d’automatiser et d’optimiser la création, le développement des produits et leur production. Dans la mode, elles sont intégrées dans une offre **sans équivalent** pour la gestion des collections, facilitant la collaboration et valorisant le capital créatif des marques.
-<p style='color:green; background-color:yellow; text-align:center'>
-Dans la mode, elles sont intégrées dans une offre de gestion des collections
-</p>
+Entreprise transnationale basée à Cestas, _Lectra_ apporte des solutions métiers spécifiques à chaque industrie qui permettent d’automatiser et d’optimiser la création, le développement des produits et leur production. Dans la mode, elles sont intégrées dans une offre de gestion des collections, facilitant la collaboration et valorisant le capital créatif des marques.
 
 Quelques chiffres illustrant l'importance de l'entreprise:  
 ![Chiffres](chiffres.jpg)
 
 Depuis sa création en 1973, _Lectra_ n’a cessé d’innover pour assurer à ses clients un accompagnement à long terme sans faille.
 
-Pour répondre aux demandes changeantes du marché et renforcer leur compétitivité, les clients de _Lectra_ entreprennent des déploiements technologiques d’envergure et mettent en place des organisations plus collaboratives, agiles et efficaces, qu’ils savent indispensables à leur mutation industrielle. **Pionnière de l’Internet industriel des objets dès 2007, _Lectra_ est le seul acteur de son secteur à proposer une offre complète à forte valeur ajoutée essentielle au déploiement de _l’Industrie 4.0_.**
-<p style='color:green; background-color:yellow; text-align:center'>
-Pour les même raisons, j'eneleverai complètmeent cett phrase
-</p>
+Pour répondre aux demandes changeantes du marché et renforcer leur compétitivité, les clients de _Lectra_ entreprennent des déploiements technologiques d’envergure et mettent en place des organisations plus collaboratives, agiles et efficaces, qu’ils savent indispensables à leur mutation industrielle. 
 
 _Lectra_ combinera progressivement, dès 2017, Software as a Service (SaaS) et cloud pour offrir à ses clients la flexibilité qui les aidera à tirer parti des solutions et services intelligents et à se doter d’outils de production compatibles avec les concepts de l’usine connectée.
 
@@ -117,11 +99,6 @@ Ce stage étant mon premier dans ce domaine, il me permet également de découvr
 ## II- Réalisation de l'application
 
 ### 1- Développement
-
-<!-- **Activités parallèles**
-
-- Readme
-- Démos, AIC, débriefs en // -->
 
 En arrivant dans l'entreprise, mon maître de stage m'a fait visité le batiment R&D Soft et expliqué le fonctionnement général de l'entreprise. Nous avons ensuite visité les autres batiments présents sur le site et réglé les dernier détails administratifs.
 
@@ -309,10 +286,6 @@ Améliorations :
 - Inverser la couleur des points du carousel pour un rendu plus intuitif.
 
 ### 3- Technologies utilisées
-
-<p style='color:green; background-color:yellow; text-align:center'>
-Sur la partie technique je laisse Guillaume faire les commentaires, il seront bien plus pertinents que les miens ;)
-</p>
 
 Le but étant de créer une application web, les langages informatiques incontournables dont nous avons besoin sont **HTML**, **CSS** et **JavaScript**, ces langages sont aujourd'hui à la base de tous les sites web :
 
